@@ -76,6 +76,11 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    host: '0.0.0.0',
+    inline:true,
+    port: 8090,
+  },
   output: {
     libraryTarget: 'umd',
     filename: 'build.js',
