@@ -6,7 +6,7 @@ let params = {}
 search.slice(1).split("&").forEach(item => {
   const arr = item.split("=")
   if (arr[0] && arr[1]) {
-    params[arr[0]] = arr[1]
+    params[arr[0]] = decodeURIComponent(arr[1])
   }
 });
 
